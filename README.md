@@ -27,3 +27,7 @@ You could also attach an oscilloscope to monitor the clock signal (SCL).
 
 - ESP32
 - 2x OLED modules (over i2c)
+
+# Sample
+<img width="1134" height="2016" alt="image" src="https://github.com/user-attachments/assets/65fcd846-440e-4753-b9b5-9073d8af55c8" />
+
