@@ -13,10 +13,11 @@ To experiment with it, you could ground the SCL/SDA of one OLED display and noti
 
 # About the files
 > esp32_i2c_monitor.ino
-You could also disconnect an OLED's VCC but in that can you will need to press EN or re-flash the device because it won't come up even after re-plugging the VCC.
-That is why this file is called monitor. It does not automatically recover the device.
+
+This is just a normal i2c monitor, it cannot re-init the device if it goes down. For example, when you disconnect an OLED's VCC and reconnect it, you will need to press EN or re-flash the device because it won't come up even after re-plugging the VCC. That is why this file is called monitor. It does not automatically recover the device.
 
 > esp32_i2c_watchdog_recover.ino
+
 In this file if you disconnect and reconnect the VCC of a OLED, the microprocessor will re-init the slave/peripheral device once the bus is up and you don't have to manually reset the ESP32.
 This is more aligned to what a watchdog should do.
 
